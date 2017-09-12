@@ -1,0 +1,347 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class ConstraintWidget {
+    private static final boolean AUTOTAG_CENTER = false;
+    protected static final int SOLVER = 1;
+    protected static final int DIRECT = 2;
+    public static final int MATCH_CONSTRAINT_SPREAD = 0;
+    public static final int MATCH_CONSTRAINT_WRAP = 1;
+    public static final int UNKNOWN = -1;
+    public static final int HORIZONTAL = 0;
+    public static final int VERTICAL = 1;
+    public static final int VISIBLE = 0;
+    public static final int INVISIBLE = 4;
+    public static final int GONE = 8;
+    public static final int CHAIN_SPREAD = 0;
+    public static final int CHAIN_SPREAD_INSIDE = 1;
+    public static final int CHAIN_PACKED = 2;
+    public int mHorizontalResolution;
+    public int mVerticalResolution;
+    int mMatchConstraintDefaultWidth;
+    int mMatchConstraintDefaultHeight;
+    int mMatchConstraintMinWidth;
+    int mMatchConstraintMaxWidth;
+    int mMatchConstraintMinHeight;
+    int mMatchConstraintMaxHeight;
+    android.support.constraint.solver.widgets.ConstraintAnchor mLeft;
+    android.support.constraint.solver.widgets.ConstraintAnchor mTop;
+    android.support.constraint.solver.widgets.ConstraintAnchor mRight;
+    android.support.constraint.solver.widgets.ConstraintAnchor mBottom;
+    android.support.constraint.solver.widgets.ConstraintAnchor mBaseline;
+    android.support.constraint.solver.widgets.ConstraintAnchor mCenterX;
+    android.support.constraint.solver.widgets.ConstraintAnchor mCenterY;
+    android.support.constraint.solver.widgets.ConstraintAnchor mCenter;
+    protected java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintAnchor> mAnchors;
+    android.support.constraint.solver.widgets.ConstraintWidget mParent;
+    int mWidth;
+    int mHeight;
+    protected float mDimensionRatio;
+    protected int mDimensionRatioSide;
+    private int mSolverLeft;
+    private int mSolverTop;
+    private int mSolverRight;
+    private int mSolverBottom;
+    protected int mX;
+    protected int mY;
+    private int mDrawX;
+    private int mDrawY;
+    private int mDrawWidth;
+    private int mDrawHeight;
+    protected int mOffsetX;
+    protected int mOffsetY;
+    int mBaselineDistance;
+    protected int mMinWidth;
+    protected int mMinHeight;
+    private int mWrapWidth;
+    private int mWrapHeight;
+    public static float DEFAULT_BIAS;
+    float mHorizontalBiasPercent;
+    float mVerticalBiasPercent;
+    android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour mHorizontalDimensionBehaviour;
+    android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour mVerticalDimensionBehaviour;
+    private java.lang.Object mCompanionWidget;
+    private int mContainerItemSkip;
+    private int mVisibility;
+    private java.lang.String mDebugName;
+    private java.lang.String mType;
+    int mDistToTop;
+    int mDistToLeft;
+    int mDistToRight;
+    int mDistToBottom;
+    boolean mLeftHasCentered;
+    boolean mRightHasCentered;
+    boolean mTopHasCentered;
+    boolean mBottomHasCentered;
+    boolean mHorizontalWrapVisited;
+    boolean mVerticalWrapVisited;
+    int mHorizontalChainStyle;
+    int mVerticalChainStyle;
+    boolean mHorizontalChainFixedPosition;
+    boolean mVerticalChainFixedPosition;
+    float mHorizontalWeight;
+    float mVerticalWeight;
+    android.support.constraint.solver.widgets.ConstraintWidget mHorizontalNextWidget;
+    android.support.constraint.solver.widgets.ConstraintWidget mVerticalNextWidget;
+
+    public void reset() { /* compiled code */ }
+
+    public ConstraintWidget() { /* compiled code */ }
+
+    public ConstraintWidget(int x, int y, int width, int height) { /* compiled code */ }
+
+    public ConstraintWidget(int width, int height) { /* compiled code */ }
+
+    public void resetSolverVariables(android.support.constraint.solver.Cache cache) { /* compiled code */ }
+
+    public void resetGroups() { /* compiled code */ }
+
+    private void addAnchors() { /* compiled code */ }
+
+    public boolean isRoot() { /* compiled code */ }
+
+    public boolean isRootContainer() { /* compiled code */ }
+
+    public boolean isInsideConstraintLayout() { /* compiled code */ }
+
+    public boolean hasAncestor(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.WidgetContainer getRootWidgetContainer() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget getParent() { /* compiled code */ }
+
+    public void setParent(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public java.lang.String getType() { /* compiled code */ }
+
+    public void setType(java.lang.String type) { /* compiled code */ }
+
+    public void setVisibility(int visibility) { /* compiled code */ }
+
+    public int getVisibility() { /* compiled code */ }
+
+    public java.lang.String getDebugName() { /* compiled code */ }
+
+    public void setDebugName(java.lang.String name) { /* compiled code */ }
+
+    public void setDebugSolverName(android.support.constraint.solver.LinearSystem system, java.lang.String name) { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+
+    int getInternalDrawX() { /* compiled code */ }
+
+    int getInternalDrawY() { /* compiled code */ }
+
+    public int getInternalDrawRight() { /* compiled code */ }
+
+    public int getInternalDrawBottom() { /* compiled code */ }
+
+    public int getX() { /* compiled code */ }
+
+    public int getY() { /* compiled code */ }
+
+    public int getWidth() { /* compiled code */ }
+
+    public int getOptimizerWrapWidth() { /* compiled code */ }
+
+    public int getOptimizerWrapHeight() { /* compiled code */ }
+
+    public int getWrapWidth() { /* compiled code */ }
+
+    public int getHeight() { /* compiled code */ }
+
+    public int getWrapHeight() { /* compiled code */ }
+
+    public int getDrawX() { /* compiled code */ }
+
+    public int getDrawY() { /* compiled code */ }
+
+    public int getDrawWidth() { /* compiled code */ }
+
+    public int getDrawHeight() { /* compiled code */ }
+
+    public int getDrawBottom() { /* compiled code */ }
+
+    public int getDrawRight() { /* compiled code */ }
+
+    protected int getRootX() { /* compiled code */ }
+
+    protected int getRootY() { /* compiled code */ }
+
+    public int getMinWidth() { /* compiled code */ }
+
+    public int getMinHeight() { /* compiled code */ }
+
+    public int getLeft() { /* compiled code */ }
+
+    public int getTop() { /* compiled code */ }
+
+    public int getRight() { /* compiled code */ }
+
+    public int getBottom() { /* compiled code */ }
+
+    public float getHorizontalBiasPercent() { /* compiled code */ }
+
+    public float getVerticalBiasPercent() { /* compiled code */ }
+
+    public boolean hasBaseline() { /* compiled code */ }
+
+    public int getBaselineDistance() { /* compiled code */ }
+
+    public java.lang.Object getCompanionWidget() { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintAnchor> getAnchors() { /* compiled code */ }
+
+    public void setX(int x) { /* compiled code */ }
+
+    public void setY(int y) { /* compiled code */ }
+
+    public void setOrigin(int x, int y) { /* compiled code */ }
+
+    public void setOffset(int x, int y) { /* compiled code */ }
+
+    public void setGoneMargin(android.support.constraint.solver.widgets.ConstraintAnchor.Type type, int goneMargin) { /* compiled code */ }
+
+    public void updateDrawPosition() { /* compiled code */ }
+
+    public void forceUpdateDrawPosition() { /* compiled code */ }
+
+    public void setDrawOrigin(int x, int y) { /* compiled code */ }
+
+    public void setDrawX(int x) { /* compiled code */ }
+
+    public void setDrawY(int y) { /* compiled code */ }
+
+    public void setDrawWidth(int drawWidth) { /* compiled code */ }
+
+    public void setDrawHeight(int drawHeight) { /* compiled code */ }
+
+    public void setWidth(int w) { /* compiled code */ }
+
+    public void setHeight(int h) { /* compiled code */ }
+
+    public void setHorizontalMatchStyle(int horizontalMatchStyle, int min, int max) { /* compiled code */ }
+
+    public void setVerticalMatchStyle(int verticalMatchStyle, int min, int max) { /* compiled code */ }
+
+    public void setDimensionRatio(java.lang.String ratio) { /* compiled code */ }
+
+    public void setDimensionRatio(float ratio, int dimensionRatioSide) { /* compiled code */ }
+
+    public float getDimensionRatio() { /* compiled code */ }
+
+    public int getDimensionRatioSide() { /* compiled code */ }
+
+    public void setHorizontalBiasPercent(float horizontalBiasPercent) { /* compiled code */ }
+
+    public void setVerticalBiasPercent(float verticalBiasPercent) { /* compiled code */ }
+
+    public void setMinWidth(int w) { /* compiled code */ }
+
+    public void setMinHeight(int h) { /* compiled code */ }
+
+    public void setWrapWidth(int w) { /* compiled code */ }
+
+    public void setWrapHeight(int h) { /* compiled code */ }
+
+    public void setDimension(int w, int h) { /* compiled code */ }
+
+    public void setFrame(int left, int top, int right, int bottom) { /* compiled code */ }
+
+    public void setHorizontalDimension(int left, int right) { /* compiled code */ }
+
+    public void setVerticalDimension(int top, int bottom) { /* compiled code */ }
+
+    public void setBaselineDistance(int baseline) { /* compiled code */ }
+
+    public void setCompanionWidget(java.lang.Object companion) { /* compiled code */ }
+
+    public void setContainerItemSkip(int skip) { /* compiled code */ }
+
+    public int getContainerItemSkip() { /* compiled code */ }
+
+    public void setHorizontalWeight(float horizontalWeight) { /* compiled code */ }
+
+    public void setVerticalWeight(float verticalWeight) { /* compiled code */ }
+
+    public void setHorizontalChainStyle(int horizontalChainStyle) { /* compiled code */ }
+
+    public int getHorizontalChainStyle() { /* compiled code */ }
+
+    public void setVerticalChainStyle(int verticalChainStyle) { /* compiled code */ }
+
+    public int getVerticalChainStyle() { /* compiled code */ }
+
+    public void connectedTo(android.support.constraint.solver.widgets.ConstraintWidget source) { /* compiled code */ }
+
+    public void immediateConnect(android.support.constraint.solver.widgets.ConstraintAnchor.Type startType, android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor.Type endType, int margin, int goneMargin) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor from, android.support.constraint.solver.widgets.ConstraintAnchor to, int margin, int creator) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor from, android.support.constraint.solver.widgets.ConstraintAnchor to, int margin) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor from, android.support.constraint.solver.widgets.ConstraintAnchor to, int margin, android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength, int creator) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintFrom, android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintTo, int margin) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintFrom, android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintTo) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintFrom, android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintTo, int margin, android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength) { /* compiled code */ }
+
+    public void connect(android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintFrom, android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor.Type constraintTo, int margin, android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength, int creator) { /* compiled code */ }
+
+    public void resetAllConstraints() { /* compiled code */ }
+
+    public void resetAnchor(android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+    public void resetAnchors() { /* compiled code */ }
+
+    public void resetAnchors(int connectionCreator) { /* compiled code */ }
+
+    public void disconnectWidget(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public void disconnectUnlockedWidget(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor getAnchor(android.support.constraint.solver.widgets.ConstraintAnchor.Type anchorType) { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour getHorizontalDimensionBehaviour() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour getVerticalDimensionBehaviour() { /* compiled code */ }
+
+    public void setHorizontalDimensionBehaviour(android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour behaviour) { /* compiled code */ }
+
+    public void setVerticalDimensionBehaviour(android.support.constraint.solver.widgets.ConstraintWidget.DimensionBehaviour behaviour) { /* compiled code */ }
+
+    public boolean isInHorizontalChain() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget getHorizontalChainControlWidget() { /* compiled code */ }
+
+    public boolean isInVerticalChain() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget getVerticalChainControlWidget() { /* compiled code */ }
+
+    public void addToSolver(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    public void addToSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    private void applyConstraints(android.support.constraint.solver.LinearSystem system, boolean wrapContent, boolean dimensionFixed, android.support.constraint.solver.widgets.ConstraintAnchor beginAnchor, android.support.constraint.solver.widgets.ConstraintAnchor endAnchor, int beginPosition, int endPosition, int dimension, int minDimension, float bias, boolean useRatio, boolean inChain, int matchConstraintDefault, int matchMinDimension, int matchMaxDimension) { /* compiled code */ }
+
+    public void updateFromSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public void updateFromSolver(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    public static enum DimensionBehaviour {
+        FIXED, WRAP_CONTENT, MATCH_CONSTRAINT, MATCH_PARENT;
+
+        private DimensionBehaviour() { /* compiled code */ }
+    }
+
+    public static enum ContentAlignment {
+        BEGIN, MIDDLE, END, TOP, VERTICAL_MIDDLE, BOTTOM, LEFT, RIGHT;
+
+        private ContentAlignment() { /* compiled code */ }
+    }
+}

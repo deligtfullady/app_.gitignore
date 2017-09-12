@@ -1,0 +1,15 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package com.avdey.fragments;
+
+public class MainActivity extends android.support.v7.app.AppCompatActivity {
+    public MainActivity() { /* compiled code */ }
+
+    protected void onCreate(android.os.Bundle savedInstanceState) { /* compiled code */ }
+
+    public boolean onCreateOptionsMenu(android.view.Menu menu) { /* compiled code */ }
+
+    public boolean onOptionsItemSelected(android.view.MenuItem item) { /* compiled code */ }
+}

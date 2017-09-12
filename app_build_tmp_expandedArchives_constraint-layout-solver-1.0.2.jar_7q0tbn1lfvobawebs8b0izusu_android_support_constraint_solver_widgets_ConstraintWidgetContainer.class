@@ -1,0 +1,109 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class ConstraintWidgetContainer extends android.support.constraint.solver.widgets.WidgetContainer {
+    private static final boolean USE_THREAD = false;
+    private static final boolean USE_SNAPSHOT = true;
+    private static final int MAX_ITERATIONS = 8;
+    private static final boolean DEBUG = false;
+    private static final boolean DEBUG_OPTIMIZE = false;
+    private static final boolean DEBUG_LAYOUT = false;
+    protected android.support.constraint.solver.LinearSystem mSystem;
+    protected android.support.constraint.solver.LinearSystem mBackgroundSystem;
+    private android.support.constraint.solver.widgets.Snapshot mSnapshot;
+    static boolean ALLOW_ROOT_GROUP;
+    int mWrapWidth;
+    int mWrapHeight;
+    int mPaddingLeft;
+    int mPaddingTop;
+    int mPaddingRight;
+    int mPaddingBottom;
+    private int mHorizontalChainsSize;
+    private int mVerticalChainsSize;
+    private android.support.constraint.solver.widgets.ConstraintWidget[] mMatchConstraintsChainedWidgets;
+    private android.support.constraint.solver.widgets.ConstraintWidget[] mVerticalChainsArray;
+    private android.support.constraint.solver.widgets.ConstraintWidget[] mHorizontalChainsArray;
+    public static final int OPTIMIZATION_NONE = 1;
+    public static final int OPTIMIZATION_ALL = 2;
+    public static final int OPTIMIZATION_BASIC = 4;
+    public static final int OPTIMIZATION_CHAIN = 8;
+    private int mOptimizationLevel;
+    private boolean[] flags;
+    private static final int FLAG_CHAIN_OPTIMIZE = 0;
+    private static final int FLAG_CHAIN_DANGLING = 1;
+    private static final int FLAG_RECOMPUTE_BOUNDS = 2;
+    private android.support.constraint.solver.widgets.ConstraintWidget[] mChainEnds;
+    private static final int CHAIN_FIRST = 0;
+    private static final int CHAIN_LAST = 1;
+    private static final int CHAIN_FIRST_VISIBLE = 2;
+    private static final int CHAIN_LAST_VISIBLE = 3;
+    private boolean mWidthMeasuredTooSmall;
+    private boolean mHeightMeasuredTooSmall;
+
+    public ConstraintWidgetContainer() { /* compiled code */ }
+
+    public ConstraintWidgetContainer(int x, int y, int width, int height) { /* compiled code */ }
+
+    public ConstraintWidgetContainer(int width, int height) { /* compiled code */ }
+
+    public void setOptimizationLevel(int value) { /* compiled code */ }
+
+    public java.lang.String getType() { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    public boolean isWidthMeasuredTooSmall() { /* compiled code */ }
+
+    public boolean isHeightMeasuredTooSmall() { /* compiled code */ }
+
+    public static android.support.constraint.solver.widgets.ConstraintWidgetContainer createContainer(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, java.lang.String name, java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> widgets, int padding) { /* compiled code */ }
+
+    public boolean addChildrenToSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    private boolean optimize(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    private void applyHorizontalChain(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    private void applyVerticalChain(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    public void updateChildrenFromSolver(android.support.constraint.solver.LinearSystem system, int group, boolean[] flags) { /* compiled code */ }
+
+    public void setPadding(int left, int top, int right, int bottom) { /* compiled code */ }
+
+    public void layout() { /* compiled code */ }
+
+    static int setGroup(android.support.constraint.solver.widgets.ConstraintAnchor anchor, int group) { /* compiled code */ }
+
+    public int layoutFindGroupsSimple() { /* compiled code */ }
+
+    public void findHorizontalWrapRecursive(android.support.constraint.solver.widgets.ConstraintWidget widget, boolean[] flags) { /* compiled code */ }
+
+    public void findVerticalWrapRecursive(android.support.constraint.solver.widgets.ConstraintWidget widget, boolean[] flags) { /* compiled code */ }
+
+    public void findWrapSize(java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> children, boolean[] flags) { /* compiled code */ }
+
+    public int layoutFindGroups() { /* compiled code */ }
+
+    public void layoutWithGroup(int numOfGroups) { /* compiled code */ }
+
+    public boolean handlesInternalConstraints() { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> getVerticalGuidelines() { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> getHorizontalGuidelines() { /* compiled code */ }
+
+    public android.support.constraint.solver.LinearSystem getSystem() { /* compiled code */ }
+
+    private void resetChains() { /* compiled code */ }
+
+    void addChain(android.support.constraint.solver.widgets.ConstraintWidget constraintWidget, int type) { /* compiled code */ }
+
+    private void addHorizontalChain(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    private void addVerticalChain(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    private int countMatchConstraintsChainedWidgets(android.support.constraint.solver.LinearSystem system, android.support.constraint.solver.widgets.ConstraintWidget[] chainEnds, android.support.constraint.solver.widgets.ConstraintWidget widget, int direction, boolean[] flags) { /* compiled code */ }
+}

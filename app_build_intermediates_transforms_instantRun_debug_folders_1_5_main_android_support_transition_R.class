@@ -1,0 +1,23 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.transition;
+
+public final class R {
+    public static final long serialVersionUID = 195020107809581842L;
+
+    public R() { /* compiled code */ }
+
+    R(java.lang.Object[] objects, com.android.tools.fd.runtime.InstantReloadException e) { /* compiled code */ }
+
+    public static final class id {
+        public static final int transition_current_scene = 2131558413;
+        public static final int transition_scene_layoutid_cache = 2131558414;
+        public static final long serialVersionUID = -1234002505858553382L;
+
+        public id() { /* compiled code */ }
+
+        id(java.lang.Object[] objects, com.android.tools.fd.runtime.InstantReloadException e) { /* compiled code */ }
+    }
+}

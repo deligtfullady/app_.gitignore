@@ -1,0 +1,19 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package com.avdey.fragments;
+
+public final class BuildConfig {
+    public static final boolean DEBUG;
+    public static final java.lang.String APPLICATION_ID = "com.avdey.fragments";
+    public static final java.lang.String BUILD_TYPE = "debug";
+    public static final java.lang.String FLAVOR = "";
+    public static final int VERSION_CODE = 1;
+    public static final java.lang.String VERSION_NAME = "1.0";
+    public static final long serialVersionUID = 4989796120965219186L;
+
+    public BuildConfig() { /* compiled code */ }
+
+    BuildConfig(java.lang.Object[] objects, com.android.tools.fd.runtime.InstantReloadException e) { /* compiled code */ }
+}

@@ -1,0 +1,19 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class Optimizer {
+    public Optimizer() { /* compiled code */ }
+
+    static void applyDirectResolutionHorizontalChain(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, android.support.constraint.solver.LinearSystem system, int numMatchConstraints, android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    static void applyDirectResolutionVerticalChain(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, android.support.constraint.solver.LinearSystem system, int numMatchConstraints, android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    static void checkMatchParent(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, android.support.constraint.solver.LinearSystem system, android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    static void checkHorizontalSimpleDependency(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, android.support.constraint.solver.LinearSystem system, android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    static void checkVerticalSimpleDependency(android.support.constraint.solver.widgets.ConstraintWidgetContainer container, android.support.constraint.solver.LinearSystem system, android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+}

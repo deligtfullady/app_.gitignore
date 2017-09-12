@@ -1,0 +1,13 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.coreui;
+
+public final class R {
+    public static final long serialVersionUID = 8052970131710210166L;
+
+    public R() { /* compiled code */ }
+
+    R(java.lang.Object[] objects, com.android.tools.fd.runtime.InstantReloadException e) { /* compiled code */ }
+}

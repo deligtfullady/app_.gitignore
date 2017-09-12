@@ -1,0 +1,43 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class WidgetContainer extends android.support.constraint.solver.widgets.ConstraintWidget {
+    protected java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> mChildren;
+
+    public WidgetContainer() { /* compiled code */ }
+
+    public WidgetContainer(int x, int y, int width, int height) { /* compiled code */ }
+
+    public WidgetContainer(int width, int height) { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    public void add(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public void remove(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> getChildren() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidgetContainer getRootConstraintContainer() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget findWidget(float x, float y) { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> findWidgets(int x, int y, int width, int height) { /* compiled code */ }
+
+    public static android.support.constraint.solver.widgets.Rectangle getBounds(java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> widgets) { /* compiled code */ }
+
+    public void setOffset(int x, int y) { /* compiled code */ }
+
+    public void updateDrawPosition() { /* compiled code */ }
+
+    public void layout() { /* compiled code */ }
+
+    public void resetSolverVariables(android.support.constraint.solver.Cache cache) { /* compiled code */ }
+
+    public void resetGroups() { /* compiled code */ }
+
+    public void removeAllChildren() { /* compiled code */ }
+}

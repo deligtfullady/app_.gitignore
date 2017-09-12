@@ -1,0 +1,19 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class Goal {
+    java.util.ArrayList<android.support.constraint.solver.SolverVariable> variables;
+
+    public Goal() { /* compiled code */ }
+
+    android.support.constraint.solver.SolverVariable getPivotCandidate() { /* compiled code */ }
+
+    private void initFromSystemErrors(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    void updateFromSystem(android.support.constraint.solver.LinearSystem system) { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+}

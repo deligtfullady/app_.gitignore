@@ -1,0 +1,116 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class ConstraintAnchor {
+    public static final boolean USE_CENTER_ANCHOR = false;
+    private static final boolean ALLOW_BINARY = false;
+    public static final int ANY_GROUP = 2147483647;
+    public static final int APPLY_GROUP_RESULTS = -2;
+    public static final int USER_CREATOR = 0;
+    public static final int SCOUT_CREATOR = 1;
+    public static final int AUTO_CONSTRAINT_CREATOR = 2;
+    private static final int UNSET_GONE_MARGIN = -1;
+    final android.support.constraint.solver.widgets.ConstraintWidget mOwner;
+    final android.support.constraint.solver.widgets.ConstraintAnchor.Type mType;
+    android.support.constraint.solver.widgets.ConstraintAnchor mTarget;
+    public int mMargin;
+    int mGoneMargin;
+    private android.support.constraint.solver.widgets.ConstraintAnchor.Strength mStrength;
+    private android.support.constraint.solver.widgets.ConstraintAnchor.ConnectionType mConnectionType;
+    private int mConnectionCreator;
+    android.support.constraint.solver.SolverVariable mSolverVariable;
+    int mGroup;
+
+    public ConstraintAnchor(android.support.constraint.solver.widgets.ConstraintWidget owner, android.support.constraint.solver.widgets.ConstraintAnchor.Type type) { /* compiled code */ }
+
+    public android.support.constraint.solver.SolverVariable getSolverVariable() { /* compiled code */ }
+
+    public void resetSolverVariable(android.support.constraint.solver.Cache cache) { /* compiled code */ }
+
+    public void setGroup(int group) { /* compiled code */ }
+
+    public int getGroup() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintWidget getOwner() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor.Type getType() { /* compiled code */ }
+
+    public int getMargin() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor.Strength getStrength() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor getTarget() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor.ConnectionType getConnectionType() { /* compiled code */ }
+
+    public void setConnectionType(android.support.constraint.solver.widgets.ConstraintAnchor.ConnectionType type) { /* compiled code */ }
+
+    public int getConnectionCreator() { /* compiled code */ }
+
+    public void setConnectionCreator(int creator) { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    public boolean connect(android.support.constraint.solver.widgets.ConstraintAnchor toAnchor, int margin, android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength, int creator) { /* compiled code */ }
+
+    public boolean connect(android.support.constraint.solver.widgets.ConstraintAnchor toAnchor, int margin, int goneMargin, android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength, int creator, boolean forceConnection) { /* compiled code */ }
+
+    public boolean connect(android.support.constraint.solver.widgets.ConstraintAnchor toAnchor, int margin, int creator) { /* compiled code */ }
+
+    public boolean connect(android.support.constraint.solver.widgets.ConstraintAnchor toAnchor, int margin) { /* compiled code */ }
+
+    public boolean isConnected() { /* compiled code */ }
+
+    public boolean isValidConnection(android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+    public boolean isSideAnchor() { /* compiled code */ }
+
+    public boolean isSimilarDimensionConnection(android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+    public void setStrength(android.support.constraint.solver.widgets.ConstraintAnchor.Strength strength) { /* compiled code */ }
+
+    public void setMargin(int margin) { /* compiled code */ }
+
+    public void setGoneMargin(int margin) { /* compiled code */ }
+
+    public boolean isVerticalAnchor() { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+
+    private java.lang.String toString(java.util.HashSet<android.support.constraint.solver.widgets.ConstraintAnchor> visited) { /* compiled code */ }
+
+    public int getSnapPriorityLevel() { /* compiled code */ }
+
+    public int getPriorityLevel() { /* compiled code */ }
+
+    public boolean isSnapCompatibleWith(android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+    public boolean isConnectionAllowed(android.support.constraint.solver.widgets.ConstraintWidget target, android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+    public boolean isConnectionAllowed(android.support.constraint.solver.widgets.ConstraintWidget target) { /* compiled code */ }
+
+    private boolean isConnectionToMe(android.support.constraint.solver.widgets.ConstraintWidget target, java.util.HashSet<android.support.constraint.solver.widgets.ConstraintWidget> checked) { /* compiled code */ }
+
+    public final android.support.constraint.solver.widgets.ConstraintAnchor getOpposite() { /* compiled code */ }
+
+    public static enum ConnectionType {
+        RELAXED, STRICT;
+
+        private ConnectionType() { /* compiled code */ }
+    }
+
+    public static enum Strength {
+        NONE, STRONG, WEAK;
+
+        private Strength() { /* compiled code */ }
+    }
+
+    public static enum Type {
+        NONE, LEFT, TOP, RIGHT, BOTTOM, BASELINE, CENTER, CENTER_X, CENTER_Y;
+
+        private Type() { /* compiled code */ }
+    }
+}

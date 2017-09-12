@@ -1,0 +1,62 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class ArrayRow {
+    private static final boolean DEBUG = false;
+    android.support.constraint.solver.SolverVariable variable;
+    float constantValue;
+    boolean used;
+    final android.support.constraint.solver.ArrayLinkedVariables variables;
+    boolean isSimpleDefinition;
+
+    public ArrayRow(android.support.constraint.solver.Cache cache) { /* compiled code */ }
+
+    void updateClientEquations() { /* compiled code */ }
+
+    boolean hasAtLeastOnePositiveVariable() { /* compiled code */ }
+
+    boolean hasKeyVariable() { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+
+    java.lang.String toReadableString() { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    boolean hasVariable(android.support.constraint.solver.SolverVariable v) { /* compiled code */ }
+
+    android.support.constraint.solver.ArrayRow createRowDefinition(android.support.constraint.solver.SolverVariable variable, int value) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowEquals(android.support.constraint.solver.SolverVariable variable, int value) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowEquals(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int margin) { /* compiled code */ }
+
+    android.support.constraint.solver.ArrayRow addSingleError(android.support.constraint.solver.SolverVariable error, int sign) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowGreaterThan(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, android.support.constraint.solver.SolverVariable slack, int margin) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowLowerThan(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, android.support.constraint.solver.SolverVariable slack, int margin) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowEqualDimension(float currentWeight, float totalWeights, float nextWeight, android.support.constraint.solver.SolverVariable variableStartA, int marginStartA, android.support.constraint.solver.SolverVariable variableEndA, int marginEndA, android.support.constraint.solver.SolverVariable variableStartB, int marginStartB, android.support.constraint.solver.SolverVariable variableEndB, int marginEndB) { /* compiled code */ }
+
+    android.support.constraint.solver.ArrayRow createRowCentering(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int marginA, float bias, android.support.constraint.solver.SolverVariable variableC, android.support.constraint.solver.SolverVariable variableD, int marginB) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow addError(android.support.constraint.solver.SolverVariable error1, android.support.constraint.solver.SolverVariable error2) { /* compiled code */ }
+
+    android.support.constraint.solver.ArrayRow createRowDimensionPercent(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, android.support.constraint.solver.SolverVariable variableC, float percent) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRowDimensionRatio(android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, android.support.constraint.solver.SolverVariable variableC, android.support.constraint.solver.SolverVariable variableD, float ratio) { /* compiled code */ }
+
+    int sizeInBytes() { /* compiled code */ }
+
+    boolean updateRowWithEquation(android.support.constraint.solver.ArrayRow definition) { /* compiled code */ }
+
+    void ensurePositiveConstant() { /* compiled code */ }
+
+    void pickRowVariable() { /* compiled code */ }
+
+    void pivot(android.support.constraint.solver.SolverVariable v) { /* compiled code */ }
+}

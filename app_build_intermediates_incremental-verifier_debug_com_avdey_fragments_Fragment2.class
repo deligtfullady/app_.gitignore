@@ -1,0 +1,9 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package com.avdey.fragments;
+
+public class Fragment2 extends android.support.v4.app.Fragment {
+    public Fragment2() { /* compiled code */ }
+}

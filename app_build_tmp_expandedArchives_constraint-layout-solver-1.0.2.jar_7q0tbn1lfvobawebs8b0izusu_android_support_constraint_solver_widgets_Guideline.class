@@ -1,0 +1,73 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class Guideline extends android.support.constraint.solver.widgets.ConstraintWidget {
+    public static final int HORIZONTAL = 0;
+    public static final int VERTICAL = 1;
+    public static final int RELATIVE_PERCENT = 0;
+    public static final int RELATIVE_BEGIN = 1;
+    public static final int RELATIVE_END = 2;
+    public static final int RELATIVE_UNKNWON = -1;
+    protected float mRelativePercent;
+    protected int mRelativeBegin;
+    protected int mRelativeEnd;
+    private android.support.constraint.solver.widgets.ConstraintAnchor mAnchor;
+    private int mOrientation;
+    private boolean mIsPositionRelaxed;
+    private int mMinimumPosition;
+    private android.support.constraint.solver.widgets.Rectangle mHead;
+    private int mHeadSize;
+
+    public Guideline() { /* compiled code */ }
+
+    public int getRelativeBehaviour() { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.Rectangle getHead() { /* compiled code */ }
+
+    public void setOrientation(int orientation) { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor getAnchor() { /* compiled code */ }
+
+    public java.lang.String getType() { /* compiled code */ }
+
+    public int getOrientation() { /* compiled code */ }
+
+    public void setMinimumPosition(int minimum) { /* compiled code */ }
+
+    public void setPositionRelaxed(boolean value) { /* compiled code */ }
+
+    public android.support.constraint.solver.widgets.ConstraintAnchor getAnchor(android.support.constraint.solver.widgets.ConstraintAnchor.Type anchorType) { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintAnchor> getAnchors() { /* compiled code */ }
+
+    public void setGuidePercent(int value) { /* compiled code */ }
+
+    public void setGuidePercent(float value) { /* compiled code */ }
+
+    public void setGuideBegin(int value) { /* compiled code */ }
+
+    public void setGuideEnd(int value) { /* compiled code */ }
+
+    public float getRelativePercent() { /* compiled code */ }
+
+    public int getRelativeBegin() { /* compiled code */ }
+
+    public int getRelativeEnd() { /* compiled code */ }
+
+    public void addToSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public void updateFromSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public void setDrawOrigin(int x, int y) { /* compiled code */ }
+
+    void inferRelativePercentPosition() { /* compiled code */ }
+
+    void inferRelativeBeginPosition() { /* compiled code */ }
+
+    void inferRelativeEndPosition() { /* compiled code */ }
+
+    public void cyclePosition() { /* compiled code */ }
+}

@@ -1,0 +1,33 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class Snapshot {
+    private int mX;
+    private int mY;
+    private int mWidth;
+    private int mHeight;
+    private java.util.ArrayList<android.support.constraint.solver.widgets.Snapshot.Connection> mConnections;
+
+    public Snapshot(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public void updateFrom(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    public void applyTo(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+    static class Connection {
+        private android.support.constraint.solver.widgets.ConstraintAnchor mAnchor;
+        private android.support.constraint.solver.widgets.ConstraintAnchor mTarget;
+        private int mMargin;
+        private android.support.constraint.solver.widgets.ConstraintAnchor.Strength mStrengh;
+        private int mCreator;
+
+        public Connection(android.support.constraint.solver.widgets.ConstraintAnchor anchor) { /* compiled code */ }
+
+        public void updateFrom(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+
+        public void applyTo(android.support.constraint.solver.widgets.ConstraintWidget widget) { /* compiled code */ }
+    }
+}

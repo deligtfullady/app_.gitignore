@@ -1,0 +1,114 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class LinearSystem {
+    private static final boolean DEBUG = false;
+    private static int POOL_SIZE;
+    int mVariablesID;
+    private java.util.HashMap<java.lang.String,android.support.constraint.solver.SolverVariable> mVariables;
+    private android.support.constraint.solver.Goal mGoal;
+    private int TABLE_SIZE;
+    private int mMaxColumns;
+    private android.support.constraint.solver.ArrayRow[] mRows;
+    private boolean[] mAlreadyTestedCandidates;
+    int mNumColumns;
+    private int mNumRows;
+    private int mMaxRows;
+    final android.support.constraint.solver.Cache mCache;
+    private android.support.constraint.solver.SolverVariable[] mPoolVariables;
+    private int mPoolVariablesCount;
+    private android.support.constraint.solver.ArrayRow[] tempClientsCopy;
+
+    public LinearSystem() { /* compiled code */ }
+
+    private void increaseTableSize() { /* compiled code */ }
+
+    private void releaseRows() { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    public android.support.constraint.solver.SolverVariable createObjectVariable(java.lang.Object anchor) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow createRow() { /* compiled code */ }
+
+    public android.support.constraint.solver.SolverVariable createSlackVariable() { /* compiled code */ }
+
+    private void addError(android.support.constraint.solver.ArrayRow row) { /* compiled code */ }
+
+    private void addSingleError(android.support.constraint.solver.ArrayRow row, int sign) { /* compiled code */ }
+
+    private android.support.constraint.solver.SolverVariable createVariable(java.lang.String name, android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    public android.support.constraint.solver.SolverVariable createErrorVariable() { /* compiled code */ }
+
+    private android.support.constraint.solver.SolverVariable acquireSolverVariable(android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    android.support.constraint.solver.Goal getGoal() { /* compiled code */ }
+
+    android.support.constraint.solver.ArrayRow getRow(int n) { /* compiled code */ }
+
+    float getValueFor(java.lang.String name) { /* compiled code */ }
+
+    public int getObjectVariableValue(java.lang.Object anchor) { /* compiled code */ }
+
+    android.support.constraint.solver.SolverVariable getVariable(java.lang.String name, android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    void rebuildGoalFromErrors() { /* compiled code */ }
+
+    public void minimize() throws java.lang.Exception { /* compiled code */ }
+
+    void minimizeGoal(android.support.constraint.solver.Goal goal) throws java.lang.Exception { /* compiled code */ }
+
+    private void updateRowFromVariables(android.support.constraint.solver.ArrayRow row) { /* compiled code */ }
+
+    public void addConstraint(android.support.constraint.solver.ArrayRow row) { /* compiled code */ }
+
+    private int optimize(android.support.constraint.solver.Goal goal) { /* compiled code */ }
+
+    private int enforceBFS(android.support.constraint.solver.Goal goal) throws java.lang.Exception { /* compiled code */ }
+
+    private void computeValues() { /* compiled code */ }
+
+    private void displayRows() { /* compiled code */ }
+
+    void displayReadableRows() { /* compiled code */ }
+
+    public void displayVariablesReadableRows() { /* compiled code */ }
+
+    public int getMemoryUsed() { /* compiled code */ }
+
+    public int getNumEquations() { /* compiled code */ }
+
+    public int getNumVariables() { /* compiled code */ }
+
+    void displaySystemInformations() { /* compiled code */ }
+
+    private void displaySolverVariables() { /* compiled code */ }
+
+    private java.lang.String getDisplaySize(int n) { /* compiled code */ }
+
+    public android.support.constraint.solver.Cache getCache() { /* compiled code */ }
+
+    public void addGreaterThan(android.support.constraint.solver.SolverVariable a, android.support.constraint.solver.SolverVariable b, int margin, int strength) { /* compiled code */ }
+
+    public void addLowerThan(android.support.constraint.solver.SolverVariable a, android.support.constraint.solver.SolverVariable b, int margin, int strength) { /* compiled code */ }
+
+    public void addCentering(android.support.constraint.solver.SolverVariable a, android.support.constraint.solver.SolverVariable b, int m1, float bias, android.support.constraint.solver.SolverVariable c, android.support.constraint.solver.SolverVariable d, int m2, int strength) { /* compiled code */ }
+
+    public android.support.constraint.solver.ArrayRow addEquality(android.support.constraint.solver.SolverVariable a, android.support.constraint.solver.SolverVariable b, int margin, int strength) { /* compiled code */ }
+
+    public void addEquality(android.support.constraint.solver.SolverVariable a, int value) { /* compiled code */ }
+
+    public static android.support.constraint.solver.ArrayRow createRowEquals(android.support.constraint.solver.LinearSystem linearSystem, android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int margin, boolean withError) { /* compiled code */ }
+
+    public static android.support.constraint.solver.ArrayRow createRowDimensionPercent(android.support.constraint.solver.LinearSystem linearSystem, android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, android.support.constraint.solver.SolverVariable variableC, float percent, boolean withError) { /* compiled code */ }
+
+    public static android.support.constraint.solver.ArrayRow createRowGreaterThan(android.support.constraint.solver.LinearSystem linearSystem, android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int margin, boolean withError) { /* compiled code */ }
+
+    public static android.support.constraint.solver.ArrayRow createRowLowerThan(android.support.constraint.solver.LinearSystem linearSystem, android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int margin, boolean withError) { /* compiled code */ }
+
+    public static android.support.constraint.solver.ArrayRow createRowCentering(android.support.constraint.solver.LinearSystem linearSystem, android.support.constraint.solver.SolverVariable variableA, android.support.constraint.solver.SolverVariable variableB, int marginA, float bias, android.support.constraint.solver.SolverVariable variableC, android.support.constraint.solver.SolverVariable variableD, int marginB, boolean withError) { /* compiled code */ }
+}

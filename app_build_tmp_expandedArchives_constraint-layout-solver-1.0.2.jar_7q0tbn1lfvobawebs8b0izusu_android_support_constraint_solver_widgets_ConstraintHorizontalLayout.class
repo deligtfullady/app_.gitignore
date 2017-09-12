@@ -1,0 +1,23 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class ConstraintHorizontalLayout extends android.support.constraint.solver.widgets.ConstraintWidgetContainer {
+    private android.support.constraint.solver.widgets.ConstraintHorizontalLayout.ContentAlignment mAlignment;
+
+    public ConstraintHorizontalLayout() { /* compiled code */ }
+
+    public ConstraintHorizontalLayout(int x, int y, int width, int height) { /* compiled code */ }
+
+    public ConstraintHorizontalLayout(int width, int height) { /* compiled code */ }
+
+    public void addToSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public static enum ContentAlignment {
+        BEGIN, MIDDLE, END, TOP, VERTICAL_MIDDLE, BOTTOM, LEFT, RIGHT;
+
+        private ContentAlignment() { /* compiled code */ }
+    }
+}

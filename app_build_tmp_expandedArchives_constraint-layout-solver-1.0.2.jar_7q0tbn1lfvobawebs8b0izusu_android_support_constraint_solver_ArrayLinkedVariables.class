@@ -1,0 +1,61 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class ArrayLinkedVariables {
+    private static final boolean DEBUG = false;
+    private static final int NONE = -1;
+    int currentSize;
+    private final android.support.constraint.solver.ArrayRow mRow;
+    private final android.support.constraint.solver.Cache mCache;
+    private int ROW_SIZE;
+    private android.support.constraint.solver.SolverVariable candidate;
+    private int[] mArrayIndices;
+    private int[] mArrayNextIndices;
+    private float[] mArrayValues;
+    private int mHead;
+    private int mLast;
+    private boolean mDidFillOnce;
+
+    ArrayLinkedVariables(android.support.constraint.solver.ArrayRow arrayRow, android.support.constraint.solver.Cache cache) { /* compiled code */ }
+
+    public final void put(android.support.constraint.solver.SolverVariable variable, float value) { /* compiled code */ }
+
+    public final void add(android.support.constraint.solver.SolverVariable variable, float value) { /* compiled code */ }
+
+    public final float remove(android.support.constraint.solver.SolverVariable variable) { /* compiled code */ }
+
+    public final void clear() { /* compiled code */ }
+
+    final boolean containsKey(android.support.constraint.solver.SolverVariable variable) { /* compiled code */ }
+
+    boolean hasAtLeastOnePositiveVariable() { /* compiled code */ }
+
+    void invert() { /* compiled code */ }
+
+    void divideByAmount(float amount) { /* compiled code */ }
+
+    void updateClientEquations(android.support.constraint.solver.ArrayRow row) { /* compiled code */ }
+
+    android.support.constraint.solver.SolverVariable pickPivotCandidate() { /* compiled code */ }
+
+    void updateFromRow(android.support.constraint.solver.ArrayRow self, android.support.constraint.solver.ArrayRow definition) { /* compiled code */ }
+
+    void updateFromSystem(android.support.constraint.solver.ArrayRow self, android.support.constraint.solver.ArrayRow[] rows) { /* compiled code */ }
+
+    android.support.constraint.solver.SolverVariable getPivotCandidate() { /* compiled code */ }
+
+    final android.support.constraint.solver.SolverVariable getVariable(int index) { /* compiled code */ }
+
+    final float getVariableValue(int index) { /* compiled code */ }
+
+    public final float get(android.support.constraint.solver.SolverVariable v) { /* compiled code */ }
+
+    int sizeInBytes() { /* compiled code */ }
+
+    public void display() { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+}

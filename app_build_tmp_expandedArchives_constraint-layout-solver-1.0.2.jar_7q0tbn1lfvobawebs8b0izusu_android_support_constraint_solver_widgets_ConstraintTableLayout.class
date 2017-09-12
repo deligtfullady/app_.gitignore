@@ -1,0 +1,96 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class ConstraintTableLayout extends android.support.constraint.solver.widgets.ConstraintWidgetContainer {
+    private boolean mVerticalGrowth;
+    private int mNumCols;
+    private int mNumRows;
+    private int mPadding;
+    private java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintTableLayout.VerticalSlice> mVerticalSlices;
+    private java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintTableLayout.HorizontalSlice> mHorizontalSlices;
+    private java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> mVerticalGuidelines;
+    private java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> mHorizontalGuidelines;
+    public static final int ALIGN_CENTER = 0;
+    public static final int ALIGN_LEFT = 1;
+    public static final int ALIGN_RIGHT = 2;
+    private static final int ALIGN_FULL = 3;
+    private android.support.constraint.solver.LinearSystem system;
+
+    public ConstraintTableLayout() { /* compiled code */ }
+
+    public ConstraintTableLayout(int x, int y, int width, int height) { /* compiled code */ }
+
+    public ConstraintTableLayout(int width, int height) { /* compiled code */ }
+
+    public java.lang.String getType() { /* compiled code */ }
+
+    public int getNumRows() { /* compiled code */ }
+
+    public int getNumCols() { /* compiled code */ }
+
+    public int getPadding() { /* compiled code */ }
+
+    public java.lang.String getColumnsAlignmentRepresentation() { /* compiled code */ }
+
+    public java.lang.String getColumnAlignmentRepresentation(int column) { /* compiled code */ }
+
+    public void setNumCols(int num) { /* compiled code */ }
+
+    public void setNumRows(int num) { /* compiled code */ }
+
+    public boolean isVerticalGrowth() { /* compiled code */ }
+
+    public void setVerticalGrowth(boolean value) { /* compiled code */ }
+
+    public void setPadding(int padding) { /* compiled code */ }
+
+    public void setColumnAlignment(int column, int alignment) { /* compiled code */ }
+
+    public void cycleColumnAlignment(int column) { /* compiled code */ }
+
+    public void setColumnAlignment(java.lang.String alignment) { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> getVerticalGuidelines() { /* compiled code */ }
+
+    public java.util.ArrayList<android.support.constraint.solver.widgets.Guideline> getHorizontalGuidelines() { /* compiled code */ }
+
+    public void addToSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public void setTableDimensions() { /* compiled code */ }
+
+    public void setDebugSolverName(android.support.constraint.solver.LinearSystem s, java.lang.String name) { /* compiled code */ }
+
+    private void updateDebugSolverNames() { /* compiled code */ }
+
+    private void setVerticalSlices() { /* compiled code */ }
+
+    private void setHorizontalSlices() { /* compiled code */ }
+
+    private void setChildrenConnections() { /* compiled code */ }
+
+    public void updateFromSolver(android.support.constraint.solver.LinearSystem system, int group) { /* compiled code */ }
+
+    public boolean handlesInternalConstraints() { /* compiled code */ }
+
+    public void computeGuidelinesPercentPositions() { /* compiled code */ }
+
+    class VerticalSlice {
+        android.support.constraint.solver.widgets.ConstraintWidget left;
+        android.support.constraint.solver.widgets.ConstraintWidget right;
+        int alignment;
+        int padding;
+
+        VerticalSlice() { /* compiled code */ }
+    }
+
+    class HorizontalSlice {
+        android.support.constraint.solver.widgets.ConstraintWidget top;
+        android.support.constraint.solver.widgets.ConstraintWidget bottom;
+        int padding;
+
+        HorizontalSlice() { /* compiled code */ }
+    }
+}

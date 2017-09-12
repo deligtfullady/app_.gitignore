@@ -1,0 +1,307 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint;
+
+public class ConstraintSet {
+    private static final java.lang.String TAG = "ConstraintSet";
+    public static final int UNSET = -1;
+    public static final int MATCH_CONSTRAINT = 0;
+    public static final int WRAP_CONTENT = -2;
+    public static final int MATCH_CONSTRAINT_WRAP = 1;
+    public static final int MATCH_CONSTRAINT_SPREAD = 0;
+    public static final int PARENT_ID = 0;
+    public static final int HORIZONTAL = 0;
+    public static final int VERTICAL = 1;
+    public static final int HORIZONTAL_GUIDELINE = 0;
+    public static final int VERTICAL_GUIDELINE = 1;
+    public static final int VISIBLE = 0;
+    public static final int INVISIBLE = 4;
+    public static final int GONE = 8;
+    public static final int LEFT = 1;
+    public static final int RIGHT = 2;
+    public static final int TOP = 3;
+    public static final int BOTTOM = 4;
+    public static final int BASELINE = 5;
+    public static final int START = 6;
+    public static final int END = 7;
+    public static final int CHAIN_SPREAD = 0;
+    public static final int CHAIN_SPREAD_INSIDE = 1;
+    public static final int CHAIN_PACKED = 2;
+    private static final boolean DEBUG = false;
+    private static final int[] VISIBILITY_FLAGS;
+    private java.util.HashMap<java.lang.Integer,android.support.constraint.ConstraintSet.Constraint> mConstraints;
+    private static android.util.SparseIntArray mapToConstant;
+    private static final int BASELINE_TO_BASELINE = 1;
+    private static final int BOTTOM_MARGIN = 2;
+    private static final int BOTTOM_TO_BOTTOM = 3;
+    private static final int BOTTOM_TO_TOP = 4;
+    private static final int DIMENSION_RATIO = 5;
+    private static final int EDITOR_ABSOLUTE_X = 6;
+    private static final int EDITOR_ABSOLUTE_Y = 7;
+    private static final int END_MARGIN = 8;
+    private static final int END_TO_END = 9;
+    private static final int END_TO_START = 10;
+    private static final int GONE_BOTTOM_MARGIN = 11;
+    private static final int GONE_END_MARGIN = 12;
+    private static final int GONE_LEFT_MARGIN = 13;
+    private static final int GONE_RIGHT_MARGIN = 14;
+    private static final int GONE_START_MARGIN = 15;
+    private static final int GONE_TOP_MARGIN = 16;
+    private static final int GUIDE_BEGIN = 17;
+    private static final int GUIDE_END = 18;
+    private static final int GUIDE_PERCENT = 19;
+    private static final int HORIZONTAL_BIAS = 20;
+    private static final int LAYOUT_HEIGHT = 21;
+    private static final int LAYOUT_VISIBILITY = 22;
+    private static final int LAYOUT_WIDTH = 23;
+    private static final int LEFT_MARGIN = 24;
+    private static final int LEFT_TO_LEFT = 25;
+    private static final int LEFT_TO_RIGHT = 26;
+    private static final int ORIENTATION = 27;
+    private static final int RIGHT_MARGIN = 28;
+    private static final int RIGHT_TO_LEFT = 29;
+    private static final int RIGHT_TO_RIGHT = 30;
+    private static final int START_MARGIN = 31;
+    private static final int START_TO_END = 32;
+    private static final int START_TO_START = 33;
+    private static final int TOP_MARGIN = 34;
+    private static final int TOP_TO_BOTTOM = 35;
+    private static final int TOP_TO_TOP = 36;
+    private static final int VERTICAL_BIAS = 37;
+    private static final int VIEW_ID = 38;
+    private static final int HORIZONTAL_WEIGHT = 39;
+    private static final int VERTICAL_WEIGHT = 40;
+    private static final int HORIZONTAL_STYLE = 41;
+    private static final int VERTICAL_STYLE = 42;
+    private static final int ALPHA = 43;
+    private static final int ELEVATION = 44;
+    private static final int ROTATION_X = 45;
+    private static final int ROTATION_Y = 46;
+    private static final int SCALE_X = 47;
+    private static final int SCALE_Y = 48;
+    private static final int TRANSFORM_PIVOT_X = 49;
+    private static final int TRANSFORM_PIVOT_Y = 50;
+    private static final int TRANSLATION_X = 51;
+    private static final int TRANSLATION_Y = 52;
+    private static final int TRANSLATION_Z = 53;
+    private static final int WIDTH_DEFAULT = 54;
+    private static final int HEIGHT_DEFAULT = 55;
+    private static final int WIDTH_MAX = 56;
+    private static final int HEIGHT_MAX = 57;
+    private static final int WIDTH_MIN = 58;
+    private static final int HEIGHT_MIN = 59;
+    private static final int UNUSED = 60;
+
+    public ConstraintSet() { /* compiled code */ }
+
+    public void clone(android.content.Context context, int constraintLayoutId) { /* compiled code */ }
+
+    public void clone(android.support.constraint.ConstraintSet set) { /* compiled code */ }
+
+    public void clone(android.support.constraint.ConstraintLayout constraintLayout) { /* compiled code */ }
+
+    public void applyTo(android.support.constraint.ConstraintLayout constraintLayout) { /* compiled code */ }
+
+    void applyToInternal(android.support.constraint.ConstraintLayout constraintLayout) { /* compiled code */ }
+
+    public void center(int centerID, int firstID, int firstSide, int firstMargin, int secondId, int secondSide, int secondMargin, float bias) { /* compiled code */ }
+
+    public void centerHorizontally(int centerID, int leftId, int leftSide, int leftMargin, int rightId, int rightSide, int rightMargin, float bias) { /* compiled code */ }
+
+    public void centerHorizontallyRtl(int centerID, int startId, int startSide, int startMargin, int endId, int endSide, int endMargin, float bias) { /* compiled code */ }
+
+    public void centerVertically(int centerID, int topId, int topSide, int topMargin, int bottomId, int bottomSide, int bottomMargin, float bias) { /* compiled code */ }
+
+    public void createVerticalChain(int topId, int topSide, int bottomId, int bottomSide, int[] chainIds, float[] weights, int style) { /* compiled code */ }
+
+    public void createHorizontalChain(int leftId, int leftSide, int rightId, int rightSide, int[] chainIds, float[] weights, int style) { /* compiled code */ }
+
+    public void createHorizontalChainRtl(int startId, int startSide, int endId, int endSide, int[] chainIds, float[] weights, int style) { /* compiled code */ }
+
+    private void createHorizontalChain(int leftId, int leftSide, int rightId, int rightSide, int[] chainIds, float[] weights, int style, int left, int right) { /* compiled code */ }
+
+    public void connect(int startID, int startSide, int endID, int endSide, int margin) { /* compiled code */ }
+
+    public void connect(int startID, int startSide, int endID, int endSide) { /* compiled code */ }
+
+    public void centerHorizontally(int viewId, int toView) { /* compiled code */ }
+
+    public void centerHorizontallyRtl(int viewId, int toView) { /* compiled code */ }
+
+    public void centerVertically(int viewId, int toView) { /* compiled code */ }
+
+    public void clear(int viewId) { /* compiled code */ }
+
+    public void clear(int viewId, int anchor) { /* compiled code */ }
+
+    public void setMargin(int viewId, int anchor, int value) { /* compiled code */ }
+
+    public void setGoneMargin(int viewId, int anchor, int value) { /* compiled code */ }
+
+    public void setHorizontalBias(int viewId, float bias) { /* compiled code */ }
+
+    public void setVerticalBias(int viewId, float bias) { /* compiled code */ }
+
+    public void setDimensionRatio(int viewId, java.lang.String ratio) { /* compiled code */ }
+
+    public void setVisibility(int viewId, int visibility) { /* compiled code */ }
+
+    public void setAlpha(int viewId, float alpha) { /* compiled code */ }
+
+    public boolean getApplyElevation(int viewId) { /* compiled code */ }
+
+    public void setApplyElevation(int viewId, boolean apply) { /* compiled code */ }
+
+    public void setElevation(int viewId, float elevation) { /* compiled code */ }
+
+    public void setRotationX(int viewId, float rotationX) { /* compiled code */ }
+
+    public void setRotationY(int viewId, float rotationY) { /* compiled code */ }
+
+    public void setScaleX(int viewId, float scaleX) { /* compiled code */ }
+
+    public void setScaleY(int viewId, float scaleY) { /* compiled code */ }
+
+    public void setTransformPivotX(int viewId, float transformPivotX) { /* compiled code */ }
+
+    public void setTransformPivotY(int viewId, float transformPivotY) { /* compiled code */ }
+
+    public void setTransformPivot(int viewId, float transformPivotX, float transformPivotY) { /* compiled code */ }
+
+    public void setTranslationX(int viewId, float translationX) { /* compiled code */ }
+
+    public void setTranslationY(int viewId, float translationY) { /* compiled code */ }
+
+    public void setTranslation(int viewId, float translationX, float translationY) { /* compiled code */ }
+
+    public void setTranslationZ(int viewId, float translationZ) { /* compiled code */ }
+
+    public void constrainHeight(int viewId, int height) { /* compiled code */ }
+
+    public void constrainWidth(int viewId, int width) { /* compiled code */ }
+
+    public void constrainMaxHeight(int viewId, int height) { /* compiled code */ }
+
+    public void constrainMaxWidth(int viewId, int width) { /* compiled code */ }
+
+    public void constrainMinHeight(int viewId, int height) { /* compiled code */ }
+
+    public void constrainMinWidth(int viewId, int width) { /* compiled code */ }
+
+    public void constrainDefaultHeight(int viewId, int height) { /* compiled code */ }
+
+    public void constrainDefaultWidth(int viewId, int width) { /* compiled code */ }
+
+    public void setHorizontalWeight(int viewId, float weight) { /* compiled code */ }
+
+    public void setVerticalWeight(int viewId, float weight) { /* compiled code */ }
+
+    public void setHorizontalChainStyle(int viewId, int chainStyle) { /* compiled code */ }
+
+    public void setVerticalChainStyle(int viewId, int chainStyle) { /* compiled code */ }
+
+    public void addToHorizontalChain(int viewId, int leftId, int rightId) { /* compiled code */ }
+
+    public void addToHorizontalChainRTL(int viewId, int leftId, int rightId) { /* compiled code */ }
+
+    public void addToVerticalChain(int viewId, int topId, int bottomId) { /* compiled code */ }
+
+    public void removeFromVerticalChain(int viewId) { /* compiled code */ }
+
+    public void removeFromHorizontalChain(int viewId) { /* compiled code */ }
+
+    public void create(int guidelineID, int orientation) { /* compiled code */ }
+
+    public void setGuidelineBegin(int guidelineID, int margin) { /* compiled code */ }
+
+    public void setGuidelineEnd(int guidelineID, int margin) { /* compiled code */ }
+
+    public void setGuidelinePercent(int guidelineID, float ratio) { /* compiled code */ }
+
+    private android.support.constraint.ConstraintSet.Constraint get(int id) { /* compiled code */ }
+
+    private java.lang.String sideToString(int side) { /* compiled code */ }
+
+    public void load(android.content.Context context, int resourceId) { /* compiled code */ }
+
+    private static int lookupID(android.content.res.TypedArray a, int index, int def) { /* compiled code */ }
+
+    private android.support.constraint.ConstraintSet.Constraint fillFromAttributeList(android.content.Context context, android.util.AttributeSet attrs) { /* compiled code */ }
+
+    private void populateConstraint(android.support.constraint.ConstraintSet.Constraint c, android.content.res.TypedArray a) { /* compiled code */ }
+
+    private static class Constraint {
+        boolean mIsGuideline;
+        public int mWidth;
+        public int mHeight;
+        int mViewId;
+        static final int UNSET = -1;
+        public int guideBegin;
+        public int guideEnd;
+        public float guidePercent;
+        public int leftToLeft;
+        public int leftToRight;
+        public int rightToLeft;
+        public int rightToRight;
+        public int topToTop;
+        public int topToBottom;
+        public int bottomToTop;
+        public int bottomToBottom;
+        public int baselineToBaseline;
+        public int startToEnd;
+        public int startToStart;
+        public int endToStart;
+        public int endToEnd;
+        public float horizontalBias;
+        public float verticalBias;
+        public java.lang.String dimensionRatio;
+        public int editorAbsoluteX;
+        public int editorAbsoluteY;
+        public int orientation;
+        public int leftMargin;
+        public int rightMargin;
+        public int topMargin;
+        public int bottomMargin;
+        public int endMargin;
+        public int startMargin;
+        public int visibility;
+        public int goneLeftMargin;
+        public int goneTopMargin;
+        public int goneRightMargin;
+        public int goneBottomMargin;
+        public int goneEndMargin;
+        public int goneStartMargin;
+        public float verticalWeight;
+        public float horizontalWeight;
+        public int horizontalChainStyle;
+        public int verticalChainStyle;
+        public float alpha;
+        public boolean applyElevation;
+        public float elevation;
+        public float rotationX;
+        public float rotationY;
+        public float scaleX;
+        public float scaleY;
+        public float transformPivotX;
+        public float transformPivotY;
+        public float translationX;
+        public float translationY;
+        public float translationZ;
+        public int widthDefault;
+        public int heightDefault;
+        public int widthMax;
+        public int heightMax;
+        public int widthMin;
+        public int heightMin;
+
+        private Constraint() { /* compiled code */ }
+
+        public android.support.constraint.ConstraintSet.Constraint clone() { /* compiled code */ }
+
+        private void fillFrom(int viewId, android.support.constraint.ConstraintLayout.LayoutParams param) { /* compiled code */ }
+
+        public void applyTo(android.support.constraint.ConstraintLayout.LayoutParams param) { /* compiled code */ }
+    }
+}

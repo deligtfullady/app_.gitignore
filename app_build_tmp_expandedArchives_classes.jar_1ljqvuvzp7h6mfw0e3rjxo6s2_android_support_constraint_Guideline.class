@@ -1,0 +1,21 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint;
+
+public class Guideline extends android.view.View {
+    public Guideline(android.content.Context context) { /* compiled code */ }
+
+    public Guideline(android.content.Context context, android.util.AttributeSet attrs) { /* compiled code */ }
+
+    public Guideline(android.content.Context context, android.util.AttributeSet attrs, int defStyleAttr) { /* compiled code */ }
+
+    public Guideline(android.content.Context context, android.util.AttributeSet attrs, int defStyleAttr, int defStyleRes) { /* compiled code */ }
+
+    public void setVisibility(int visibility) { /* compiled code */ }
+
+    public void draw(android.graphics.Canvas canvas) { /* compiled code */ }
+
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) { /* compiled code */ }
+}

@@ -1,0 +1,56 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class SolverVariable {
+    private static final boolean INTERNAL_DEBUG = false;
+    public static final int STRENGTH_NONE = 0;
+    public static final int STRENGTH_LOW = 1;
+    public static final int STRENGTH_MEDIUM = 2;
+    public static final int STRENGTH_HIGH = 3;
+    public static final int STRENGTH_HIGHEST = 4;
+    public static final int STRENGTH_EQUALITY = 5;
+    private static int uniqueId;
+    private java.lang.String mName;
+    public int id;
+    int definitionId;
+    public int strength;
+    public float computedValue;
+    static final int MAX_STRENGTH = 6;
+    float[] strengthVector;
+    android.support.constraint.solver.SolverVariable.Type mType;
+    android.support.constraint.solver.ArrayRow[] mClientEquations;
+    int mClientEquationsCount;
+
+    private static java.lang.String getUniqueName(android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    public SolverVariable(java.lang.String name, android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    public SolverVariable(android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    void clearStrengths() { /* compiled code */ }
+
+    java.lang.String strengthsToString() { /* compiled code */ }
+
+    void addClientEquation(android.support.constraint.solver.ArrayRow equation) { /* compiled code */ }
+
+    void removeClientEquation(android.support.constraint.solver.ArrayRow equation) { /* compiled code */ }
+
+    public void reset() { /* compiled code */ }
+
+    public java.lang.String getName() { /* compiled code */ }
+
+    public void setName(java.lang.String name) { /* compiled code */ }
+
+    public void setType(android.support.constraint.solver.SolverVariable.Type type) { /* compiled code */ }
+
+    public java.lang.String toString() { /* compiled code */ }
+
+    public static enum Type {
+        UNRESTRICTED, CONSTANT, SLACK, ERROR, UNKNOWN;
+
+        private Type() { /* compiled code */ }
+    }
+}

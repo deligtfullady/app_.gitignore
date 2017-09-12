@@ -1,0 +1,26 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver.widgets;
+
+public class Rectangle {
+    public int x;
+    public int y;
+    public int width;
+    public int height;
+
+    public Rectangle() { /* compiled code */ }
+
+    public void setBounds(int x, int y, int width, int height) { /* compiled code */ }
+
+    void grow(int w, int h) { /* compiled code */ }
+
+    boolean intersects(android.support.constraint.solver.widgets.Rectangle bounds) { /* compiled code */ }
+
+    public boolean contains(int x, int y) { /* compiled code */ }
+
+    public int getCenterX() { /* compiled code */ }
+
+    public int getCenterY() { /* compiled code */ }
+}

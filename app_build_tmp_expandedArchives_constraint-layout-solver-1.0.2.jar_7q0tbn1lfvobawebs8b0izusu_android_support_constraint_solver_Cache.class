@@ -1,0 +1,13 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint.solver;
+
+public class Cache {
+    android.support.constraint.solver.Pools.Pool<android.support.constraint.solver.ArrayRow> arrayRowPool;
+    android.support.constraint.solver.Pools.Pool<android.support.constraint.solver.SolverVariable> solverVariablePool;
+    android.support.constraint.solver.SolverVariable[] mIndexedVariables;
+
+    public Cache() { /* compiled code */ }
+}

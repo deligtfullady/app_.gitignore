@@ -1,0 +1,173 @@
+
+  // IntelliJ API Decompiler stub source generated from a class file
+  // Implementation of methods is not available
+
+package android.support.constraint;
+
+public class ConstraintLayout extends android.view.ViewGroup {
+    static final boolean ALLOWS_EMBEDDED = false;
+    public static final java.lang.String VERSION = "ConstraintLayout-1.0.0";
+    private static final java.lang.String TAG = "ConstraintLayout";
+    private static final boolean SIMPLE_LAYOUT = true;
+    android.util.SparseArray<android.view.View> mChildrenByIds;
+    private final java.util.ArrayList<android.support.constraint.solver.widgets.ConstraintWidget> mVariableDimensionsWidgets;
+    android.support.constraint.solver.widgets.ConstraintWidgetContainer mLayoutWidget;
+    private int mMinWidth;
+    private int mMinHeight;
+    private int mMaxWidth;
+    private int mMaxHeight;
+    private boolean mDirtyHierarchy;
+    private int mOptimizationLevel;
+    private android.support.constraint.ConstraintSet mConstraintSet;
+
+    public ConstraintLayout(android.content.Context context) { /* compiled code */ }
+
+    public ConstraintLayout(android.content.Context context, android.util.AttributeSet attrs) { /* compiled code */ }
+
+    public ConstraintLayout(android.content.Context context, android.util.AttributeSet attrs, int defStyleAttr) { /* compiled code */ }
+
+    public void setId(int id) { /* compiled code */ }
+
+    private void init(android.util.AttributeSet attrs) { /* compiled code */ }
+
+    public void addView(android.view.View child, int index, android.view.ViewGroup.LayoutParams params) { /* compiled code */ }
+
+    public void removeView(android.view.View view) { /* compiled code */ }
+
+    public void onViewAdded(android.view.View view) { /* compiled code */ }
+
+    public void onViewRemoved(android.view.View view) { /* compiled code */ }
+
+    public void setMinWidth(int value) { /* compiled code */ }
+
+    public void setMinHeight(int value) { /* compiled code */ }
+
+    public int getMinWidth() { /* compiled code */ }
+
+    public int getMinHeight() { /* compiled code */ }
+
+    public void setMaxWidth(int value) { /* compiled code */ }
+
+    public void setMaxHeight(int value) { /* compiled code */ }
+
+    public int getMaxWidth() { /* compiled code */ }
+
+    public int getMaxHeight() { /* compiled code */ }
+
+    private void updateHierarchy() { /* compiled code */ }
+
+    private void setChildrenConstraints() { /* compiled code */ }
+
+    private final android.support.constraint.solver.widgets.ConstraintWidget getTargetWidget(int id) { /* compiled code */ }
+
+    private final android.support.constraint.solver.widgets.ConstraintWidget getViewWidget(android.view.View view) { /* compiled code */ }
+
+    private void internalMeasureChildren(int parentWidthSpec, int parentHeightSpec) { /* compiled code */ }
+
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) { /* compiled code */ }
+
+    private void setSelfDimensionBehaviour(int widthMeasureSpec, int heightMeasureSpec) { /* compiled code */ }
+
+    protected void solveLinearSystem() { /* compiled code */ }
+
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) { /* compiled code */ }
+
+    public void setOptimizationLevel(int level) { /* compiled code */ }
+
+    public android.support.constraint.ConstraintLayout.LayoutParams generateLayoutParams(android.util.AttributeSet attrs) { /* compiled code */ }
+
+    protected android.support.constraint.ConstraintLayout.LayoutParams generateDefaultLayoutParams() { /* compiled code */ }
+
+    protected android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams p) { /* compiled code */ }
+
+    protected boolean checkLayoutParams(android.view.ViewGroup.LayoutParams p) { /* compiled code */ }
+
+    public void setConstraintSet(android.support.constraint.ConstraintSet set) { /* compiled code */ }
+
+    public void requestLayout() { /* compiled code */ }
+
+    public static class LayoutParams extends android.view.ViewGroup.MarginLayoutParams {
+        public static final int MATCH_CONSTRAINT = 0;
+        public static final int PARENT_ID = 0;
+        public static final int UNSET = -1;
+        public static final int HORIZONTAL = 0;
+        public static final int VERTICAL = 1;
+        public static final int LEFT = 1;
+        public static final int RIGHT = 2;
+        public static final int TOP = 3;
+        public static final int BOTTOM = 4;
+        public static final int BASELINE = 5;
+        public static final int START = 6;
+        public static final int END = 7;
+        public static final int MATCH_CONSTRAINT_WRAP = 1;
+        public static final int MATCH_CONSTRAINT_SPREAD = 0;
+        public static final int CHAIN_SPREAD = 0;
+        public static final int CHAIN_SPREAD_INSIDE = 1;
+        public static final int CHAIN_PACKED = 2;
+        public int guideBegin;
+        public int guideEnd;
+        public float guidePercent;
+        public int leftToLeft;
+        public int leftToRight;
+        public int rightToLeft;
+        public int rightToRight;
+        public int topToTop;
+        public int topToBottom;
+        public int bottomToTop;
+        public int bottomToBottom;
+        public int baselineToBaseline;
+        public int startToEnd;
+        public int startToStart;
+        public int endToStart;
+        public int endToEnd;
+        public int goneLeftMargin;
+        public int goneTopMargin;
+        public int goneRightMargin;
+        public int goneBottomMargin;
+        public int goneStartMargin;
+        public int goneEndMargin;
+        public float horizontalBias;
+        public float verticalBias;
+        public java.lang.String dimensionRatio;
+        float dimensionRatioValue;
+        int dimensionRatioSide;
+        public float horizontalWeight;
+        public float verticalWeight;
+        public int horizontalChainStyle;
+        public int verticalChainStyle;
+        public int matchConstraintDefaultWidth;
+        public int matchConstraintDefaultHeight;
+        public int matchConstraintMinWidth;
+        public int matchConstraintMinHeight;
+        public int matchConstraintMaxWidth;
+        public int matchConstraintMaxHeight;
+        public int editorAbsoluteX;
+        public int editorAbsoluteY;
+        public int orientation;
+        boolean horizontalDimensionFixed;
+        boolean verticalDimensionFixed;
+        boolean needsBaseline;
+        boolean isGuideline;
+        int resolvedLeftToLeft;
+        int resolvedLeftToRight;
+        int resolvedRightToLeft;
+        int resolvedRightToRight;
+        int resolveGoneLeftMargin;
+        int resolveGoneRightMargin;
+        float resolvedHorizontalBias;
+        android.support.constraint.solver.widgets.ConstraintWidget widget;
+
+        public LayoutParams(android.support.constraint.ConstraintLayout.LayoutParams source) { /* compiled code */ }
+
+        public LayoutParams(android.content.Context c, android.util.AttributeSet attrs) { /* compiled code */ }
+
+        public void validate() { /* compiled code */ }
+
+        public LayoutParams(int width, int height) { /* compiled code */ }
+
+        public LayoutParams(android.view.ViewGroup.LayoutParams source) { /* compiled code */ }
+
+        @android.annotation.TargetApi(17)
+        public void resolveLayoutDirection(int layoutDirection) { /* compiled code */ }
+    }
+}
